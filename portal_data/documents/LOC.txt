@@ -1,0 +1,9 @@
+合成业务文书
+西楼现场记录
+资料编号：LOC
+
+boxes_seen：["B3"]
+qty_seen：2
+confirmed：false
+
+本文件为本地业务资料副本，效力依业务规程认定。

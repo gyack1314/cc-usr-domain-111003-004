@@ -1,0 +1,48 @@
+[
+  [
+    "balance",
+    {
+      "sent": 8,
+      "received": 3,
+      "returned": 2,
+      "in_transit": 1
+    },
+    2
+  ],
+  [
+    "authorized",
+    {
+      "grant": {
+        "signer": "a",
+        "site": "东",
+        "start": "2026-01-01",
+        "end": "2026-01-02"
+      },
+      "signer": "a",
+      "site": "西",
+      "on": "2026-01-01"
+    },
+    false
+  ],
+  [
+    "overused",
+    {
+      "allocations": [
+        {
+          "receipt": "x",
+          "qty": 2
+        },
+        {
+          "receipt": "x",
+          "qty": 2
+        }
+      ],
+      "capacities": {
+        "x": 3
+      }
+    },
+    [
+      "x"
+    ]
+  ]
+]

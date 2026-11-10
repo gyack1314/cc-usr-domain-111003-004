@@ -1,0 +1,170 @@
+[
+  {
+    "id": "L1",
+    "category": "运输",
+    "title": "主运单",
+    "revision": 1,
+    "fields": {
+      "shipment": "S1",
+      "boxes": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "qty": 8
+    }
+  },
+  {
+    "id": "L2",
+    "category": "运输",
+    "title": "东楼分运",
+    "revision": 1,
+    "fields": {
+      "parent": "L1",
+      "boxes": [
+        "B1",
+        "B2"
+      ],
+      "qty": 4
+    }
+  },
+  {
+    "id": "L3",
+    "category": "运输",
+    "title": "西楼分运",
+    "revision": 1,
+    "fields": {
+      "parent": "L1",
+      "boxes": [
+        "B3",
+        "B4"
+      ],
+      "qty": 4
+    }
+  },
+  {
+    "id": "P1",
+    "category": "回单",
+    "title": "东楼原签收",
+    "revision": 1,
+    "fields": {
+      "leg": "L2",
+      "qty": 4,
+      "signer": "张甲",
+      "site": "东楼",
+      "date": "2026-11-03",
+      "serials": [
+        "DV01",
+        "DV02",
+        "DV03",
+        "DV04"
+      ]
+    }
+  },
+  {
+    "id": "P1C",
+    "category": "回单",
+    "title": "东楼补正",
+    "revision": 1,
+    "fields": {
+      "replaces": "P1",
+      "leg": "L2",
+      "qty": 2,
+      "signer": "张甲",
+      "site": "东楼",
+      "date": "2026-11-03",
+      "serials": [
+        "DV01",
+        "DV02"
+      ]
+    }
+  },
+  {
+    "id": "P2",
+    "category": "回单",
+    "title": "西楼签收",
+    "revision": 1,
+    "fields": {
+      "leg": "L3",
+      "qty": 4,
+      "signer": "李乙",
+      "site": "西楼",
+      "date": "2026-11-03",
+      "serials": []
+    }
+  },
+  {
+    "id": "REF",
+    "category": "引用",
+    "title": "西楼回单用于主运单结算",
+    "revision": 1,
+    "fields": {
+      "receipt": "P2",
+      "leg": "L1",
+      "qty": 4
+    }
+  },
+  {
+    "id": "AU1",
+    "category": "授权",
+    "title": "张甲授权",
+    "revision": 1,
+    "fields": {
+      "signer": "张甲",
+      "site": "东楼",
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    }
+  },
+  {
+    "id": "AU2",
+    "category": "授权",
+    "title": "李乙东楼代签",
+    "revision": 1,
+    "fields": {
+      "signer": "李乙",
+      "site": "东楼",
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    }
+  },
+  {
+    "id": "RET",
+    "category": "退回",
+    "title": "B2退回仓库",
+    "revision": 1,
+    "fields": {
+      "box": "B2",
+      "serials": [
+        "DV03",
+        "DV04"
+      ],
+      "qty": 2,
+      "date": "2026-11-04"
+    }
+  },
+  {
+    "id": "LOC",
+    "category": "调查",
+    "title": "西楼现场记录",
+    "revision": 1,
+    "fields": {
+      "boxes_seen": [
+        "B3"
+      ],
+      "qty_seen": 2,
+      "confirmed": false
+    }
+  },
+  {
+    "id": "VOID",
+    "category": "撤销",
+    "title": "东楼旧回单作废",
+    "revision": 1,
+    "fields": {
+      "target": "P1",
+      "effective": "2026-11-04"
+    }
+  }
+]

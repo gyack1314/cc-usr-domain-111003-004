@@ -1,0 +1,178 @@
+{
+  "allocations": [
+    {
+      "box": "B1",
+      "dest": "客户实收",
+      "qty": 1,
+      "serial": "DV01",
+      "site": "东楼",
+      "source": "P1C@7ec1ce97fa9881e35c5ecff845f668362817847e600ecbb9c3399726f7193b1d"
+    },
+    {
+      "box": "B1",
+      "dest": "客户实收",
+      "qty": 1,
+      "serial": "DV02",
+      "site": "东楼",
+      "source": "P1C@7ec1ce97fa9881e35c5ecff845f668362817847e600ecbb9c3399726f7193b1d"
+    },
+    {
+      "box": "B2",
+      "dest": "退回仓库",
+      "qty": 1,
+      "serial": "DV03",
+      "site": "仓库",
+      "source": "RET@b2c012b548b5a5c3c51dff07449bee6e05a210afb12898e64b03f61e12f7b1c9"
+    },
+    {
+      "box": "B2",
+      "dest": "退回仓库",
+      "qty": 1,
+      "serial": "DV04",
+      "site": "仓库",
+      "source": "RET@b2c012b548b5a5c3c51dff07449bee6e05a210afb12898e64b03f61e12f7b1c9"
+    },
+    {
+      "allocatable_bound": [
+        0,
+        1
+      ],
+      "box": "B3",
+      "dest": "未归属",
+      "note": "西楼分运段，无有效签收；现场记录见过该箱但未确认(confirmed=false)",
+      "qty": 1,
+      "serial": "DV05",
+      "site": "西楼段",
+      "source": [
+        "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7",
+        "LOC@580c691a3b433260d7b800657e16dd84e54ee30a0527b1be651551094302b685"
+      ]
+    },
+    {
+      "allocatable_bound": [
+        0,
+        1
+      ],
+      "box": "B3",
+      "dest": "未归属",
+      "note": "西楼分运段，无有效签收；现场记录见过该箱但未确认(confirmed=false)",
+      "qty": 1,
+      "serial": "DV06",
+      "site": "西楼段",
+      "source": [
+        "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7",
+        "LOC@580c691a3b433260d7b800657e16dd84e54ee30a0527b1be651551094302b685"
+      ]
+    },
+    {
+      "allocatable_bound": [
+        0,
+        1
+      ],
+      "box": "B4",
+      "dest": "未归属",
+      "note": "西楼分运段，无有效签收；无任何实物目击记录",
+      "qty": 1,
+      "serial": "DV07",
+      "site": "西楼段",
+      "source": [
+        "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7"
+      ]
+    },
+    {
+      "allocatable_bound": [
+        0,
+        1
+      ],
+      "box": "B4",
+      "dest": "未归属",
+      "note": "西楼分运段，无有效签收；无任何实物目击记录",
+      "qty": 1,
+      "serial": "DV08",
+      "site": "西楼段",
+      "source": [
+        "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7"
+      ]
+    }
+  ],
+  "authorization": {
+    "P1": true,
+    "P1C": true,
+    "P2": false
+  },
+  "capacities": {
+    "P1": 0,
+    "P1C": 2,
+    "P2": 0
+  },
+  "cross_references": [
+    {
+      "id": "REF@a577dff7f648470982f0e238536943603ab4f37a14af4084325611fbee5ab61d",
+      "note": "REF将P2(qty4)引用到主运单L1结算；属同一批数量的多处引用，不构成新的实收，P2可用余额为0"
+    }
+  ],
+  "evidence_refs": {
+    "AU1": "AU1@30e34e83f85f1f9b71866e9315013e09105eb434abca147e495e0a63b4b7161f",
+    "AU2": "AU2@4ed8bb8c38277c56a506bc304c1a1a6332dff90c6a2b6ab6b6b8168c00bef2b0",
+    "L1": "L1@17f6c225fa45b7acf42afd3f2147da6eb271d20b2a7d55eb5e3a5dea8bdd43bf",
+    "L2": "L2@c6efde10ea978f55963dce1a0695d981ec2525cd0112d67fdc348ca2f738caf7",
+    "L3": "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7",
+    "LOC": "LOC@580c691a3b433260d7b800657e16dd84e54ee30a0527b1be651551094302b685",
+    "P1": "P1@d41f5d224753c18a6dbdc445f2748f6508f8e83841399189a296172917ce8578",
+    "P1C": "P1C@7ec1ce97fa9881e35c5ecff845f668362817847e600ecbb9c3399726f7193b1d",
+    "P2": "P2@cdd8b4aac7fef2f847f43a052529a2d6d1e199ecf042baa2828f7ffae895eda7",
+    "REF": "REF@a577dff7f648470982f0e238536943603ab4f37a14af4084325611fbee5ab61d",
+    "RET": "RET@b2c012b548b5a5c3c51dff07449bee6e05a210afb12898e64b03f61e12f7b1c9",
+    "VOID": "VOID@1dfd07df60a58eebe3b00a90087228fc41f23734aa880f7dd490ea7daadc9a88"
+  },
+  "generated_from": "portal+materials",
+  "receipt_status": {
+    "P1": "已作废(VOID, 2026-11-04生效)，由P1C补正替代",
+    "P1C": "有效凭证",
+    "P2": "有效凭证；签字人未获该场所授权，不计客户实收"
+  },
+  "shipment": "S1",
+  "totals": {
+    "received": 2,
+    "residual": 0,
+    "returned": 2,
+    "sent": 8,
+    "unattributed": 4
+  },
+  "unattributed_bounds": {
+    "DV05": {
+      "evidence": [
+        "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7",
+        "LOC@580c691a3b433260d7b800657e16dd84e54ee30a0527b1be651551094302b685"
+      ],
+      "lower": 0,
+      "note": "西楼分运段，无有效签收；现场记录见过该箱但未确认(confirmed=false)",
+      "upper": 1
+    },
+    "DV06": {
+      "evidence": [
+        "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7",
+        "LOC@580c691a3b433260d7b800657e16dd84e54ee30a0527b1be651551094302b685"
+      ],
+      "lower": 0,
+      "note": "西楼分运段，无有效签收；现场记录见过该箱但未确认(confirmed=false)",
+      "upper": 1
+    },
+    "DV07": {
+      "evidence": [
+        "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7"
+      ],
+      "lower": 0,
+      "note": "西楼分运段，无有效签收；无任何实物目击记录",
+      "upper": 1
+    },
+    "DV08": {
+      "evidence": [
+        "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7"
+      ],
+      "lower": 0,
+      "note": "西楼分运段，无有效签收；无任何实物目击记录",
+      "upper": 1
+    }
+  }
+}

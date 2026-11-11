@@ -1,0 +1,12 @@
+{
+  "category": "授权",
+  "fields": {
+    "end": "2026-12-31",
+    "signer": "张甲",
+    "site": "东楼",
+    "start": "2026-01-01"
+  },
+  "id": "AU1",
+  "revision": 1,
+  "title": "张甲授权"
+}

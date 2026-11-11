@@ -1,0 +1,15 @@
+{
+  "category": "退回",
+  "fields": {
+    "box": "B2",
+    "date": "2026-11-04",
+    "qty": 2,
+    "serials": [
+      "DV03",
+      "DV04"
+    ]
+  },
+  "id": "RET",
+  "revision": 1,
+  "title": "B2退回仓库"
+}

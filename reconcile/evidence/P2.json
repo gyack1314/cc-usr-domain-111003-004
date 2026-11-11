@@ -1,0 +1,14 @@
+{
+  "category": "回单",
+  "fields": {
+    "date": "2026-11-03",
+    "leg": "L3",
+    "qty": 4,
+    "serials": [],
+    "signer": "李乙",
+    "site": "西楼"
+  },
+  "id": "P2",
+  "revision": 1,
+  "title": "西楼签收"
+}

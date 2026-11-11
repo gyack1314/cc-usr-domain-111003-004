@@ -1,0 +1,170 @@
+{
+  "AU1": {
+    "attachment_sha256": "30e34e83f85f1f9b71866e9315013e09105eb434abca147e495e0a63b4b7161f",
+    "document": "AU1.txt",
+    "fields": {
+      "end": "2026-12-31",
+      "signer": "张甲",
+      "site": "东楼",
+      "start": "2026-01-01"
+    },
+    "reference": "AU1@30e34e83f85f1f9b71866e9315013e09105eb434abca147e495e0a63b4b7161f",
+    "title": "张甲授权"
+  },
+  "AU2": {
+    "attachment_sha256": "4ed8bb8c38277c56a506bc304c1a1a6332dff90c6a2b6ab6b6b8168c00bef2b0",
+    "document": "AU2.txt",
+    "fields": {
+      "end": "2026-12-31",
+      "signer": "李乙",
+      "site": "东楼",
+      "start": "2026-01-01"
+    },
+    "reference": "AU2@4ed8bb8c38277c56a506bc304c1a1a6332dff90c6a2b6ab6b6b8168c00bef2b0",
+    "title": "李乙东楼代签"
+  },
+  "L1": {
+    "attachment_sha256": "17f6c225fa45b7acf42afd3f2147da6eb271d20b2a7d55eb5e3a5dea8bdd43bf",
+    "document": "L1.txt",
+    "fields": {
+      "boxes": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "qty": 8,
+      "shipment": "S1"
+    },
+    "reference": "L1@17f6c225fa45b7acf42afd3f2147da6eb271d20b2a7d55eb5e3a5dea8bdd43bf",
+    "title": "主运单"
+  },
+  "L2": {
+    "attachment_sha256": "c6efde10ea978f55963dce1a0695d981ec2525cd0112d67fdc348ca2f738caf7",
+    "document": "L2.txt",
+    "fields": {
+      "boxes": [
+        "B1",
+        "B2"
+      ],
+      "parent": "L1",
+      "qty": 4
+    },
+    "reference": "L2@c6efde10ea978f55963dce1a0695d981ec2525cd0112d67fdc348ca2f738caf7",
+    "title": "东楼分运"
+  },
+  "L3": {
+    "attachment_sha256": "263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7",
+    "document": "L3.txt",
+    "fields": {
+      "boxes": [
+        "B3",
+        "B4"
+      ],
+      "parent": "L1",
+      "qty": 4
+    },
+    "reference": "L3@263cb8416c3c3d900abccd375b6dbe93534255a60b91efae067da4dbf3f996c7",
+    "title": "西楼分运"
+  },
+  "LOC": {
+    "attachment_sha256": "580c691a3b433260d7b800657e16dd84e54ee30a0527b1be651551094302b685",
+    "document": "LOC.txt",
+    "fields": {
+      "boxes_seen": [
+        "B3"
+      ],
+      "confirmed": false,
+      "qty_seen": 2
+    },
+    "reference": "LOC@580c691a3b433260d7b800657e16dd84e54ee30a0527b1be651551094302b685",
+    "title": "西楼现场记录"
+  },
+  "P1": {
+    "attachment_sha256": "d41f5d224753c18a6dbdc445f2748f6508f8e83841399189a296172917ce8578",
+    "document": "P1.txt",
+    "fields": {
+      "date": "2026-11-03",
+      "leg": "L2",
+      "qty": 4,
+      "serials": [
+        "DV01",
+        "DV02",
+        "DV03",
+        "DV04"
+      ],
+      "signer": "张甲",
+      "site": "东楼"
+    },
+    "reference": "P1@d41f5d224753c18a6dbdc445f2748f6508f8e83841399189a296172917ce8578",
+    "title": "东楼原签收"
+  },
+  "P1C": {
+    "attachment_sha256": "7ec1ce97fa9881e35c5ecff845f668362817847e600ecbb9c3399726f7193b1d",
+    "document": "P1C.txt",
+    "fields": {
+      "date": "2026-11-03",
+      "leg": "L2",
+      "qty": 2,
+      "replaces": "P1",
+      "serials": [
+        "DV01",
+        "DV02"
+      ],
+      "signer": "张甲",
+      "site": "东楼"
+    },
+    "reference": "P1C@7ec1ce97fa9881e35c5ecff845f668362817847e600ecbb9c3399726f7193b1d",
+    "title": "东楼补正"
+  },
+  "P2": {
+    "attachment_sha256": "cdd8b4aac7fef2f847f43a052529a2d6d1e199ecf042baa2828f7ffae895eda7",
+    "document": "P2.txt",
+    "fields": {
+      "date": "2026-11-03",
+      "leg": "L3",
+      "qty": 4,
+      "serials": [],
+      "signer": "李乙",
+      "site": "西楼"
+    },
+    "reference": "P2@cdd8b4aac7fef2f847f43a052529a2d6d1e199ecf042baa2828f7ffae895eda7",
+    "title": "西楼签收"
+  },
+  "REF": {
+    "attachment_sha256": "a577dff7f648470982f0e238536943603ab4f37a14af4084325611fbee5ab61d",
+    "document": "REF.txt",
+    "fields": {
+      "leg": "L1",
+      "qty": 4,
+      "receipt": "P2"
+    },
+    "reference": "REF@a577dff7f648470982f0e238536943603ab4f37a14af4084325611fbee5ab61d",
+    "title": "西楼回单用于主运单结算"
+  },
+  "RET": {
+    "attachment_sha256": "b2c012b548b5a5c3c51dff07449bee6e05a210afb12898e64b03f61e12f7b1c9",
+    "document": "RET.txt",
+    "fields": {
+      "box": "B2",
+      "date": "2026-11-04",
+      "qty": 2,
+      "serials": [
+        "DV03",
+        "DV04"
+      ]
+    },
+    "reference": "RET@b2c012b548b5a5c3c51dff07449bee6e05a210afb12898e64b03f61e12f7b1c9",
+    "title": "B2退回仓库"
+  },
+  "VOID": {
+    "attachment_sha256": "1dfd07df60a58eebe3b00a90087228fc41f23734aa880f7dd490ea7daadc9a88",
+    "document": "VOID.txt",
+    "fields": {
+      "effective": "2026-11-04",
+      "target": "P1"
+    },
+    "reference": "VOID@1dfd07df60a58eebe3b00a90087228fc41f23734aa880f7dd490ea7daadc9a88",
+    "title": "东楼旧回单作废"
+  }
+}

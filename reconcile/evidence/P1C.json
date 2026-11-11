@@ -1,0 +1,18 @@
+{
+  "category": "回单",
+  "fields": {
+    "date": "2026-11-03",
+    "leg": "L2",
+    "qty": 2,
+    "replaces": "P1",
+    "serials": [
+      "DV01",
+      "DV02"
+    ],
+    "signer": "张甲",
+    "site": "东楼"
+  },
+  "id": "P1C",
+  "revision": 1,
+  "title": "东楼补正"
+}

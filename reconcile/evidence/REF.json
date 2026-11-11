@@ -1,0 +1,11 @@
+{
+  "category": "引用",
+  "fields": {
+    "leg": "L1",
+    "qty": 4,
+    "receipt": "P2"
+  },
+  "id": "REF",
+  "revision": 1,
+  "title": "西楼回单用于主运单结算"
+}

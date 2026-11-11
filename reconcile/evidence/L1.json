@@ -1,0 +1,16 @@
+{
+  "category": "运输",
+  "fields": {
+    "boxes": [
+      "B1",
+      "B2",
+      "B3",
+      "B4"
+    ],
+    "qty": 8,
+    "shipment": "S1"
+  },
+  "id": "L1",
+  "revision": 1,
+  "title": "主运单"
+}

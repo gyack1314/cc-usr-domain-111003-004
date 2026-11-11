@@ -1,0 +1,14 @@
+{
+  "category": "运输",
+  "fields": {
+    "boxes": [
+      "B3",
+      "B4"
+    ],
+    "parent": "L1",
+    "qty": 4
+  },
+  "id": "L3",
+  "revision": 1,
+  "title": "西楼分运"
+}

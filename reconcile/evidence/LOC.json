@@ -1,0 +1,13 @@
+{
+  "category": "调查",
+  "fields": {
+    "boxes_seen": [
+      "B3"
+    ],
+    "confirmed": false,
+    "qty_seen": 2
+  },
+  "id": "LOC",
+  "revision": 1,
+  "title": "西楼现场记录"
+}
